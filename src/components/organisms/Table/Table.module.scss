@@ -1,0 +1,91 @@
+@import "utils/styles/variables";
+
+.table__Row {
+    display: grid;
+    width: 100%;
+}
+
+.table__RowHeader {
+    box-shadow: rgba(0, 0, 0, 0.15) 0px 3px 3px 0px;
+    border-bottom-left-radius: 0.5rem;
+    border-bottom-right-radius: 0.5rem;
+    font-weight: bold;
+    border-top: 1px solid map-get($collors, "border");
+}
+
+.table__RowBody {
+    cursor: pointer;
+
+    &:nth-child(even) {
+        background-color: map-get($collors, "component-bg-2");
+    }
+}
+
+.table__Row4 {
+    grid-template-columns: 50px 80px 1fr 200px;
+    @media only screen and (max-width: 1100px) { 
+        grid-template-columns: 50px 60px 1fr 60px;
+    }
+}
+.table__RowHeader4 {
+    grid-template-columns: 50px 80px 1fr 200px min-content;
+    @media only screen and (max-width: 1100px) { 
+        grid-template-columns: 50px 60px 1fr 60px min-content;
+    }
+}
+
+.table__Cell {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+    border-left: 1px solid map-get($collors, "border");
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+
+    &:first-child {
+        border: none;
+    }
+}
+
+.table__CellButtons {
+    justify-content: space-evenly;
+
+    @media only screen and (max-width: 1100px) { 
+        flex-direction: column;
+    }
+}
+
+.table__Body {
+    height: 100%;
+    overflow-y: scroll;
+    &::-webkit-scrollbar {
+        width: 10px;
+      }
+    
+    &::-webkit-scrollbar-track {
+        background: map-get($collors, 'border');
+        border-radius: 10px;
+    }
+    
+    &::-webkit-scrollbar-thumb {
+        background: map-get($collors, 'primary');
+        border-radius: 10px;
+      }
+    
+    &::-webkit-scrollbar-thumb:hover {
+        background: rgba(map-get($collors, 'primary'), 0.9);
+        border-radius: 10px;
+      }
+    
+    &::-webkit-scrollbar-thumb:active {
+        background: rgba(map-get($collors, 'primary'), 0.8);
+        border-radius: 10px;
+      }
+}
+
+.table__scrollbarPlaceHolder {
+    height: 100%;
+    width: 10px;
+}

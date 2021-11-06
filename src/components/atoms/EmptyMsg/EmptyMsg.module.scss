@@ -1,0 +1,23 @@
+@import "utils/styles/variables";
+
+.empty__Container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+
+    svg {
+        width: 3rem;
+        height: 3rem;
+        fill: map-get($collors, 'primary');
+    }
+}
+
+.empty__Text {
+    margin-top: 1rem;
+    color: map-get($collors, 'primary');
+    font-weight: bold;
+}

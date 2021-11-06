@@ -1,0 +1,11 @@
+@import "utils/styles/variables";
+
+.wrapper {
+    background: map-get($collors, "component-bg");
+    padding: 1rem;
+    width: 100%;
+    box-shadow: rgba(0, 0, 0, 0.45) 0px 25px 20px -20px;
+    border-radius: 0.5rem;
+    border-top-left-radius: 0;
+}
+

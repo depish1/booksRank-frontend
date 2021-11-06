@@ -1,0 +1,67 @@
+@import "utils/styles/variables";
+
+.tab__Container {
+    height: 2.4rem;
+    display: flex;
+    align-items: flex-end;
+}
+
+.tab__Tab {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    background: transparent;
+    color: map-get($collors, "component-bg");
+    padding: 0 2rem;
+    border: none;
+    position: relative;
+    height: 2rem;
+    transition: all 0.3s ease-in-out;
+    font-size: 1.2rem;
+
+    &::before {
+        display: block;
+        width: 100%;
+        height: 100%;
+        content: " ";
+        background: transparent;
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        z-index: -1;
+        border-right: 1rem solid transparent;
+        border-bottom: 2rem solid map-get($collors, "primary");
+        border-left: 1rem solid transparent;
+        transition: all 0.3s ease-in-out;
+    }  
+
+    &:hover {
+        height: 2.4rem;
+        cursor: pointer;
+
+        &::before {
+            
+            border-bottom: 2.4rem solid map-get($collors, "primary");
+        }
+    }
+}
+
+.tab__TabActive {
+
+    height: 2.4rem;
+    color: map-get($collors, "text");
+
+    &::before {
+        border-bottom: 2.4rem solid map-get($collors, "component-bg");
+    }
+
+    &:hover {
+        cursor:default;
+        &::before {
+            border-bottom: 2.4rem solid map-get($collors, "component-bg");
+        }
+    }
+}

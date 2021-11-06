@@ -1,0 +1,14 @@
+@import "utils/styles/variables";
+
+.tabs__Container {
+    width: 1000px;
+    max-width: 95%;
+    z-index: 2;
+}
+
+.tabs__Nav {
+    width: 100%;
+    display: flex;
+    align-items: flex-end;
+}
+

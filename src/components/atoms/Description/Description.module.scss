@@ -1,0 +1,7 @@
+@import "utils/styles/variables";
+
+.description {
+    color: map-get($collors, "text");
+    width: 100%;
+    padding: 1rem 2rem;
+}

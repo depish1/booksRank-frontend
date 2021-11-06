@@ -1,0 +1,6 @@
+.rank__wrapper {
+    display: grid;
+    height: 80vh;
+    grid-template-rows: min-content min-content 1fr min-content;
+    padding: 0;
+}

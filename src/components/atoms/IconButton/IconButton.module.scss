@@ -1,0 +1,27 @@
+@import "utils/styles/variables";
+
+.iconButton {
+    width: 2.2rem;
+    height: 2.2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: .5rem;
+    cursor: pointer;
+    position: relative;
+    background-color: transparent;
+    border: none;
+    transition: all .3s ease-in-out;
+
+    &:hover {
+        background-color: map-get($collors, "border");
+
+    }
+
+    svg {
+        width: 1.5rem;
+        height: 1.5rem;
+        transition: fill .3s ease-in-out;
+        fill: map-get($collors, "primary");
+    }
+}
