@@ -1,0 +1,24 @@
+{
+  "files": {
+    "main.css": "/booksRank-frontend/static/css/main.55ea84cd.chunk.css",
+    "main.js": "/booksRank-frontend/static/js/main.962141cf.chunk.js",
+    "main.js.map": "/booksRank-frontend/static/js/main.962141cf.chunk.js.map",
+    "runtime-main.js": "/booksRank-frontend/static/js/runtime-main.e92381a5.js",
+    "runtime-main.js.map": "/booksRank-frontend/static/js/runtime-main.e92381a5.js.map",
+    "static/js/2.4b619585.chunk.js": "/booksRank-frontend/static/js/2.4b619585.chunk.js",
+    "static/js/2.4b619585.chunk.js.map": "/booksRank-frontend/static/js/2.4b619585.chunk.js.map",
+    "index.html": "/booksRank-frontend/index.html",
+    "static/css/main.55ea84cd.chunk.css.map": "/booksRank-frontend/static/css/main.55ea84cd.chunk.css.map",
+    "static/js/2.4b619585.chunk.js.LICENSE.txt": "/booksRank-frontend/static/js/2.4b619585.chunk.js.LICENSE.txt",
+    "static/media/addIcon.e9074d95.svg": "/booksRank-frontend/static/media/addIcon.e9074d95.svg",
+    "static/media/deleteIcon2.1129c53a.svg": "/booksRank-frontend/static/media/deleteIcon2.1129c53a.svg",
+    "static/media/editIcon.4fa02ba3.svg": "/booksRank-frontend/static/media/editIcon.4fa02ba3.svg",
+    "static/media/sadIcon.9cad9f67.svg": "/booksRank-frontend/static/media/sadIcon.9cad9f67.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.e92381a5.js",
+    "static/js/2.4b619585.chunk.js",
+    "static/css/main.55ea84cd.chunk.css",
+    "static/js/main.962141cf.chunk.js"
+  ]
+}
